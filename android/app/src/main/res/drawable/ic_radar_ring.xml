@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Outer radar sweep arc -->
+    <path
+        android:strokeColor="#F6CF80"
+        android:strokeWidth="2.0"
+        android:strokeLineCap="round"
+        android:pathData="M50,10 A40,40 0 1,1 10,50" />
+    <!-- Inner radar sweep arc -->
+    <path
+        android:strokeColor="#0F9D58"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M50,25 A25,25 0 1,1 25,50" />
+    <!-- Small center dot -->
+    <path
+        android:fillColor="#F6CF80"
+        android:pathData="M50,47 A3,3 0 1,1 49.9,47" />
+</vector>
