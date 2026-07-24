@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
 
         if (isNetworkAvailable()) {
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, SecurityScanActivity.class);
                 startActivity(intent);
                 finish();
             }, 2000); // 2 seconds delay
@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
             // Retry check after 4 seconds or allow user to exit
             new Handler(Looper.getMainLooper()).postDelayed(() -> {
                 if (isNetworkAvailable()) {
-                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, SecurityScanActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
