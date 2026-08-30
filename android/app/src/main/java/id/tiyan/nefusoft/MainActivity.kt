@@ -228,7 +228,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         // Load targeted origin URL
-        webView.loadUrl("https://nefusoft2.tiyan.biz.id/")
+        webView.loadUrl("https://nefusoft2.tiyan.my.id/")
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
